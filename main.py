@@ -2,7 +2,7 @@ import numpy as np
 import sys
 
 def criaMatriz(instancia):
-    caminho = rf'C:\Users\55199\Desktop\CMAC03 - ALGORITMOS EM GRAFOS\prototipo\instancias\{instancia}.txt'
+    caminho = rf'C:\Users\55199\Desktop\CMAC03 - ALGORITMOS EM GRAFOS\prototipo\prototipoGRAFOS\instancias\{instancia}.txt'
     with open(caminho, 'rb') as f:
         mat = np.loadtxt(f)
     return mat
@@ -12,7 +12,7 @@ def resultado(mat):
     return r
 
 def salvaResultado(r):
-    arq = open(rf'C:\Users\55199\Desktop\CMAC03 - ALGORITMOS EM GRAFOS\prototipo\resultado.txt','w')
+    arq = open(rf'C:\Users\55199\Desktop\CMAC03 - ALGORITMOS EM GRAFOS\prototipo\prototipoGRAFOS\resultado.txt','w')
     arq.writelines(r + "\n")
     arq.close()
 
